@@ -1,7 +1,10 @@
 #![cfg_attr(not(test), no_std)]
 
+#[cfg(feature="delog")]
 #[macro_use]
+#[cfg(feature="delog")]
 extern crate delog;
+#[cfg(feature="delog")]
 generate_macros!();
 
 use serde_core as serde;
